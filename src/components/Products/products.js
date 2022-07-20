@@ -17,7 +17,6 @@ const ProductList = () => {
     const response = await axios
       .get("https://fakestoreapi.com/products")
       .catch((err) => {
-        console.log("Err: ", err);
       });
     dispatch(setProducts(response.data));
   };
@@ -26,7 +25,6 @@ const ProductList = () => {
     fetchProducts();
   }, []);
 
-  console.log("Products :", products);
   return (
     <div className="productCatalog">
       <div className="productCatalog-mobile">

@@ -19,7 +19,6 @@ const SmartGearProductList = () => {
     const response = await axios
       .get("https://fakestoreapi.com/products")
       .catch((err) => {
-        console.log("Err: ", err);
       });
     dispatch(setProducts(response.data));
   };
@@ -27,8 +26,6 @@ const SmartGearProductList = () => {
   useEffect(() => {
     fetchProducts();
   }, []);
-
-  console.log("Products :", products);
   const categoryList = products.filter((value) => value.category === "jewelery");
   return (
     <div className="productCatalog">

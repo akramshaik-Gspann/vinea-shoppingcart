@@ -16,7 +16,6 @@ const WomenProductList = () => {
     const response = await axios
       .get("https://fakestoreapi.com/products")
       .catch((err) => {
-        console.log("Err: ", err);
       });
     dispatch(setProducts(response.data));
   };
@@ -25,7 +24,6 @@ const WomenProductList = () => {
     fetchProducts();
   }, []);
   const categoryList = products.filter((value) => value.category === "women's clothing");
-  console.log("Products :", products);
   return (
     <div className="productCatalog">
       <div className="productCatalog-mobile">

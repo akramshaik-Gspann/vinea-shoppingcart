@@ -16,7 +16,6 @@ const MenProductList = () => {
     const response = await axios
       .get("https://fakestoreapi.com/products")
       .catch((err) => {
-        console.log("Err: ", err);
       });
     dispatch(setProducts(response.data));
   };
@@ -24,8 +23,6 @@ const MenProductList = () => {
   useEffect(() => {
     fetchProducts();
   }, []);
-
-  console.log("Products :", products);
   const categoryList = products.filter((value) => value.category === "men's clothing");
   return (
     <div className="productCatalog">

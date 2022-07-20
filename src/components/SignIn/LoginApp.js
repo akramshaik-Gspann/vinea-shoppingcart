@@ -12,20 +12,16 @@ function LoginApp() {
   const [error, setError] = useState("");
 
   const Login = details => {
-    console.log("details");
     if (details.email === adminUser.email && details.password === adminUser.password) {
-      console.log("Logged IN");
       setUser({
         name: details.name,
         email: details.email
       })
     } else {
-      console.log("Details donot Match!");
       setError("Details donot Match!");
     }
   }
   const Logout = () => {
-    console.log("Logout");
     setUser({ name: "", email:""});
 
   }
