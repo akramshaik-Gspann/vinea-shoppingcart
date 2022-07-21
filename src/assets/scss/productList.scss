@@ -15,7 +15,6 @@ $background-color_11: #EB7327;
 $background-color_12: #228B22;
 $border-color_1: transparent;
 
-/*# sourceMappingURL=productList.css.map */
 .button-primary {
 	background-color: $background-color_1;
 	font-size: 14px;
@@ -33,7 +32,7 @@ $border-color_1: transparent;
 }
 .productCatalog__title {
 	background-color: $background-color_2;
-	height: 340px;
+	// height: 340px;
 	position: relative;
 	padding: 100px 0;
 	h3 {
@@ -55,7 +54,7 @@ $border-color_1: transparent;
 .productCatalog__image {
 	img {
 		width: 100%;
-		height: 320px;
+		height: 232px;
 		margin-top: 10px;
 	}
 }
@@ -164,6 +163,9 @@ $border-color_1: transparent;
 	.productfilters {
 		display: none;
 	}
+	.sortByLatest{
+		display: none;
+	}
 	.product__image {
 		img {
 			height: 332px;
@@ -200,8 +202,8 @@ $border-color_1: transparent;
 		display: none;
 	}
 	.product-filter {
-		display: block;
-		text-align: center;
+		display: flex;
+		justify-content: space-around;
 		margin: 20px 0px;
 		button {
 			background: #FFFFFF;
@@ -217,6 +219,9 @@ $border-color_1: transparent;
 @media only screen and (min-width: 320px) and (max-width: 767px) {
 	.container {
 		width: 100% !important;
+	}
+	.sortByLatest {
+		display: none;
 	}
 	.breadcrumbslist__filter {
 		display: block !important;
@@ -265,8 +270,8 @@ $border-color_1: transparent;
 		display: none;
 	}
 	.product-filter {
-		display: block;
-		text-align: center;
+		justify-content: space-between;
+		display: flex;
 		margin: 20px 0px;
 		button {
 			background: #FFFFFF;
@@ -277,5 +282,10 @@ $border-color_1: transparent;
 			font-size: 16px;
 			font-weight: 600;
 		}
+	}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1800px) {
+	.product-filter {
+		display: none;
 	}
 }

@@ -283,6 +283,10 @@ h3 {
   .cart h1 {
     font-size: 34px;
   }
+  .cart h1::before {
+    width: 35%;
+    left: 35%;
+  }
   .makeStyles-root-1 {
     width: 100% !important;
   }

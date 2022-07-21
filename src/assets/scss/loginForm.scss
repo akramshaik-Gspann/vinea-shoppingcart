@@ -1,7 +1,7 @@
 $color_1: #888;
-$color_2: #666;
-$color_3: #FE4880;
-$color_4: #FFF;
+$color_2: #FFF;
+$color_3: #666;
+$color_4: #FE4880;
 $font-family_1: montserrat, sans-serif;
 $background-color_1: gainsboro;
 $background-color_2: #FFF;
@@ -9,19 +9,17 @@ $background-color_3: #F8F8F8;
 $background-color_4: blue;
 $background-color_5: #fff;
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: $font-family_1;
-}
 input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
 	appearance: none;
 	background: none;
 	border: none;
 	outline: none;
 }
 button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
 	appearance: none;
 	background: none;
 	border: none;
@@ -29,7 +27,11 @@ button {
 }
 form {
 	position: relative;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	background-color: $background-color_1;
 	.form-inner {
@@ -54,8 +56,10 @@ form {
 				padding: 10px 15px;
 				background-color: $background-color_3;
 				border-radius: 8px;
+				-webkit-transition: 0.4s;
 				transition: 0.4s;
 				&:focus {
+					-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
 					box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
 				}
 			}
@@ -67,8 +71,9 @@ form {
 			background-color: $background-color_4;
 			background-size: 200%;
 			background-position: 0%;
+			-webkit-transition: 0.4s;
 			transition: 0.4s;
-			color: $color_4;
+			color: $color_2;
 			font-weight: 700;
 			cursor: pointer;
 			&:hover {
@@ -81,19 +86,24 @@ form {
 	.form-group {
 		label {
 			display: block;
-			color: $color_2;
+			color: $color_3;
 			font-size: 12px;
 			margin-bottom: 5px;
+			-webkit-transition: 0.4s;
 			transition: 0.4s;
 		}
 		&:focus-within {
 			label {
-				color: $color_3;
+				color: $color_4;
 			}
 		}
 	}
 }
 .welcome {
+	width: 100%;
+	max-width: 480px;
+	background-color: $background-color_5;
+	padding: 15px 30px;
 	button {
 		display: inline-block;
 		padding: 10px 15px;
@@ -101,25 +111,22 @@ form {
 		background-color: $background-color_4;
 		background-size: 200%;
 		background-position: 0%;
+		-webkit-transition: 0.4s;
 		transition: 0.4s;
-		color: $color_4;
+		color: $color_2;
 		font-weight: 700;
 		cursor: pointer;
 		&:hover {
 			background-position: 100% 0%;
 		}
 	}
-	width: 100%;
-	max-width: 480px;
-	background-color: $background-color_5;
-	padding: 15px 30px;
 	h2 {
 		color: $color_1;
 		font-size: 28px;
 		font-weight: 500;
 		margin-bottom: 30px;
 		span {
-			color: $color_3;
+			color: $color_4;
 			font-weight: 700;
 		}
 	}

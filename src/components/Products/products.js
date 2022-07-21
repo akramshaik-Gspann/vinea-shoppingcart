@@ -3,7 +3,7 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { setProducts } from "../../redux/actions/productsActions";
 import ProductPage from "../ProductInformation/productPage";
-import women from "../../assets/images/adobe-lady.jpeg";
+import women from "../../assets/images/women9.jpg";
 import BreadCrumb from '../BreadCrumb/breadCrumb';
 import '../../assets/scss/productList.css';
 import { BiSort } from "react-icons/bi";
@@ -47,7 +47,7 @@ const ProductList = () => {
           <div class="aem-Grid aem-Grid--12">
             <div class="aem-GridColumn aem-GridColumn--default--4">
               <div className="productCatalog__title">
-                <h3>Women's Wear</h3>
+                <h3>Women's</h3>
               </div>
             </div>
             <div class="aem-GridColumn aem-GridColumn--default--8">
@@ -84,16 +84,16 @@ const ProductList = () => {
                 <div className="productfilters">
                   <h4>Filters</h4>
                   <p>Attribute</p>
-                  <label><input type="checkbox" />Option</label>
-                  <label><input type="checkbox" />Option</label>
-                  <label><input type="checkbox" />Option</label>
-                  <label><input type="checkbox" />Option</label>
+                  <label><input type="checkbox" />X-Small</label>
+                  <label><input type="checkbox" />Small</label>
+                  <label><input type="checkbox" />Medium</label>
+                  <label><input type="checkbox" />Large</label>
                   <a href="/">Show more</a>
                   <p>Attribute</p>
-                  <label><input type="checkbox" />Option</label>
-                  <label><input type="checkbox" />Option</label>
-                  <label><input type="checkbox" />Option</label>
-                  <label><input type="checkbox" />Option</label>
+                  <label><input type="checkbox" />Outdoor</label>
+                  <label><input type="checkbox" />Casual</label>
+                  <label><input type="checkbox" />Athlesisure</label>
+                  <label><input type="checkbox" />Running</label>
                   <p>Color</p>
                   <button className="btn-1"></button>
                   <button className="btn-2"></button>
@@ -106,14 +106,14 @@ const ProductList = () => {
                   <button className="btn-9"></button>
                   <button className="btn-10"></button>
                   <p>Attribute</p>
-                  <label><input type="checkbox" />Option</label>
-                  <label><input type="checkbox" />Option</label>
-                  <label><input type="checkbox" />Option</label>
-                  <label><input type="checkbox" />Option</label>
-                  <label><input type="checkbox" />Option</label>
-                  <label><input type="checkbox" />Option</label>
-                  <label><input type="checkbox" />Option</label>
-                  <label><input type="checkbox" />Option</label>
+                  <label><input type="checkbox" />Calvin Klien</label>
+                  <label><input type="checkbox" />Dolce & Gabbana</label>
+                  <label><input type="checkbox" />Miu Miu</label>
+                  <label><input type="checkbox" />Prada</label>
+                  <label><input type="checkbox" />Rag & Bone</label>
+                  <label><input type="checkbox" />Gucci</label>
+                  <label><input type="checkbox" />Chanel</label>
+                  <label><input type="checkbox" />Dior</label>
                   <hr></hr>
                 </div>
               </div>

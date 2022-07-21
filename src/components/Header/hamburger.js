@@ -1,5 +1,6 @@
 import React from 'react'
-import '../Header/hamburger.css';
+// import '../Header/hamburger.css';
+import '../../assets/scss/hamburger.scss';
 import { NavLink } from "react-router-dom";
 import search from '../../assets/images/search.png';
 import basket from '../../assets/images/shopping-bag.png';
@@ -9,16 +10,14 @@ function Hamburger(props) {
     <div className='hamburgerPhone'>
       <div class="navbar">
         <div class="container nav-container">
-
-
           <input class="checkbox" type="checkbox" name="" id="" />
           <div class="hamburger-lines">
             <span class="line line1"></span>
             <span class="line line2"></span>
             <span class="line line3"></span>
           </div>
-          <div className="hamberger__logo">
-            <NavLink to="/"><span data-char="V">V</span>ENIA</NavLink>
+          <div className="hamberger__logo" >
+            <NavLink to="/"><span>V</span><span>ENIA</span></NavLink>
           </div>
           <div className="header__icons">
             <ul>
@@ -32,8 +31,6 @@ function Hamburger(props) {
                 )}
               </NavLink>{' '}
             </ul>
-
-
           </div>
           <div class="menu-items">
             <li><NavLink to="/women">Women</NavLink></li>

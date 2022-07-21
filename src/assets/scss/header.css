@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Source+Serif+Pro&display=swap");
 .button-primary {
   background-color: #1F39FF;
   font-size: 14px;
@@ -27,13 +29,15 @@ body {
   padding-top: 10px;
 }
 
-.header__logo a {
+.header__logo a span {
   text-decoration: none;
   font-size: 30px;
   color: #1B252C;
+  font-family: "Righteous";
+  letter-spacing: 5px;
+  font-weight: lighter;
+  text-decoration: none;
 }
-
-
 
 .header__logo a span:nth-child(1) {
   display: inline-block;
@@ -43,6 +47,18 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.header__logo a:hover {
+  text-decoration: none;
+}
+
+.logoo {
+  text-decoration: none !important;
+}
+
+.logoo:hover {
+  text-decoration: none !important;
 }
 
 .header__categories {
@@ -71,7 +87,6 @@ body {
   font-size: 16px;
   margin-left: 15px;
 }
-
 
 .header__icons ul {
   display: -webkit-box;
@@ -118,11 +133,11 @@ body {
   font-size: 12px;
 }
 
-.search{
+.search {
   margin-top: 6px;
 }
 
-.dropdown{
+.dropdown {
   margin-top: 6px;
 }
 
@@ -131,5 +146,4 @@ body {
     display: none;
   }
 }
-
-
+/*# sourceMappingURL=header.css.map */

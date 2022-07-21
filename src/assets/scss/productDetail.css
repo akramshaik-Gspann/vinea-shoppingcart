@@ -1,7 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Source+Serif+Pro&display=swap");
-h1, h2, h3 {
-  font-family: 'Source Serif Pro', serif;
+h1 {
+  font-family: "Source Serif Pro", serif;
+}
+
+h2 {
+  font-family: "Source Serif Pro", serif;
+}
+
+h3 {
+  font-family: "Source Serif Pro", serif;
 }
 
 .button-primary {
@@ -60,6 +66,17 @@ h1, h2, h3 {
   padding-left: 35px;
 }
 
+.productdetails__right h5 {
+  font-size: 20px;
+  color: #172026;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.productdetails__right hr {
+  margin: 10px 0;
+}
+
 .productdetails__right-title {
   font-size: 36px;
   color: #172026;
@@ -94,17 +111,6 @@ h1, h2, h3 {
   width: 50%;
   font-size: 16px;
   margin-top: 10px;
-}
-
-.productdetails__right h5 {
-  font-size: 20px;
-  color: #172026;
-  margin-top: 20px;
-  font-weight: 600;
-}
-
-.productdetails__right hr {
-  margin: 10px 0;
 }
 
 .productdetails__right-colors img {
@@ -194,6 +200,9 @@ h1, h2, h3 {
   .productdetails__right .button-primary {
     padding: 5px 95px;
   }
+  .productdetails__right .pro-details {
+    text-align: center;
+  }
   .productdetails__right-title {
     font-size: 24px;
   }
@@ -201,9 +210,6 @@ h1, h2, h3 {
     height: 0;
   }
   .productdetails__right-quantity {
-    text-align: center;
-  }
-  .productdetails__right .pro-details {
     text-align: center;
   }
   .productdetails__left-desc h2 {
@@ -232,4 +238,4 @@ h1, h2, h3 {
     display: block !important;
   }
 }
-/*# sourceMappingURL=Productdetails.css.map */
+/*# sourceMappingURL=productDetail.css.map */

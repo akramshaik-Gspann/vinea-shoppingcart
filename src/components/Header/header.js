@@ -9,7 +9,6 @@ import { NavLink } from "react-router-dom";
 import Skeleton from 'react-loading-skeleton';
 
 const Header = (props) => {
-
   const [loading, setLoading] = useState(false);
   const Loading = () => {
     return (
@@ -22,8 +21,6 @@ const Header = (props) => {
       </>
     );
   }
-
-
   const ShowProducts = () => {
     return (
       <header className="header">
@@ -31,8 +28,8 @@ const Header = (props) => {
           <div class="aem-GridColumn--phone--12">
             <div className="container">
               <div className="header__content">
-                <div className="header__logo">
-                  <NavLink to="/"><span data-char="V">V</span>ENIA</NavLink>
+                <div className="header__logo" >
+                  <NavLink className="logoo" to="/"><span>V</span><span>ENIA</span></NavLink>
                 </div>
                 <div className="header__categories">
                   <ul>
@@ -55,14 +52,14 @@ const Header = (props) => {
                       </div>
                     </li>
                     <li className="cartCount">
-                    <NavLink to="/cart" className="btn btn-outline-dark ms-2">
-                      <img src={basket} alt="basket-image" />{' '}
-                      {props.countCartItems ? (
-                        <button className="btn btn-primary">{props.countCartItems}</button>
-                      ) : (
-                        ''
-                      )}
-                    </NavLink>{' '}
+                      <NavLink to="/cart" className="btn btn-outline-dark ms-2">
+                        <img src={basket} alt="basket-image" />{' '}
+                        {props.countCartItems ? (
+                          <button className="btn btn-primary">{props.countCartItems}</button>
+                        ) : (
+                          ''
+                        )}
+                      </NavLink>{' '}
                     </li>
                   </ul>
                 </div>
@@ -75,16 +72,14 @@ const Header = (props) => {
   }
 
   return (
-
     <div className="headerHamburger">
       <div className="my-5 py-5">
-        <div className="row justify-content-center">
+        <div className="justify-content-center">
           {loading ? <Loading /> : <ShowProducts />}
 
         </div>
       </div>
     </div>
   )
-
 }
 export default Header;
