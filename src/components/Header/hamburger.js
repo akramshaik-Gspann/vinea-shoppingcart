@@ -1,9 +1,8 @@
 import React from 'react'
-// import '../Header/hamburger.css';
 import '../../assets/scss/hamburger.scss';
 import { NavLink } from "react-router-dom";
-import search from '../../assets/images/search.png';
-import basket from '../../assets/images/shopping-bag.png';
+import { FiShoppingBag } from 'react-icons/fi';
+import venia from '../../assets/images/venia.png';
 
 function Hamburger(props) {
   return (
@@ -17,15 +16,14 @@ function Hamburger(props) {
             <span class="line line3"></span>
           </div>
           <div className="hamberger__logo" >
-            <NavLink to="/"><span>V</span><span>ENIA</span></NavLink>
+            <NavLink className="" to="/"><img src={venia} width="80" /></NavLink>
           </div>
           <div className="header__icons">
             <ul>
-              <NavLink to="#"><li><img src={search} alt="search-image" /></li></NavLink>
-              <NavLink to="/cart" className="btn btn-outline-dark ms-2">
-                <img src={basket} alt="basket-image" />{' '}
+              <NavLink to="/cart" className="">
+                <FiShoppingBag />{' '}
                 {props.countCartItems ? (
-                  <button className="btn btn-primary">{props.countCartItems}</button>
+                  <button className="">{props.countCartItems}</button>
                 ) : (
                   ''
                 )}

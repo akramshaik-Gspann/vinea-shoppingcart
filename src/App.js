@@ -14,6 +14,12 @@ import SmartGearProductList from "./components/Products/smartGearProductList";
 import AccessoriesProductList from "./components/Products/accessoriesProductList";
 import RegisterForm from "./components/Register/register";
 import Hamburger from "./components/Header/hamburger";
+import CheckOutForm from "./components/CheckOut/checkOutForm";
+import ShippingInformation from "./components/CheckOut/shippingInformation";
+import ShippingMethod from "./components/CheckOut/shippingMethod";
+import PaymentInformation from "./components/CheckOut/paymentInformation";
+import PlaceOrder from "./components/CheckOut/placeOrder";
+import OrderSuccessfull from "./components/CheckOut/orderSuccessfull";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -48,15 +54,23 @@ function App() {
         <Header countCartItems={cartItems.length} />
         <Hamburger countCartItems={cartItems.length} />
         <Routes>
-          <Route exact path='/' element={<Home />} />
+          <Route exact path='/' element={<Home />}/>
           <Route exact path='/login' element={<LoginApp />} />
           <Route exact path="/registerForm" element={<RegisterForm />} />
           <Route exact path='/women' element={<WomenProductList />} />
           <Route exact path='/men' element={<MenProductList />} />
-          <Route exact path='/smartGear' element={<SmartGearProductList />} />
-          <Route exact path='/accessories' element={<AccessoriesProductList />} />
+          <Route exact path='/jewellery' element={<SmartGearProductList />} />
+          <Route exact path='/electronics' element={<AccessoriesProductList />} />
           <Route exact path='/products' element={<ProductPage />} />
-          <Route exact path='/product/:productId' element={<ProductDetails onAdd={onAdd} />} />
+
+          <Route exact path='/checkoutForm' element={<CheckOutForm />} />
+          <Route exact path='/shippingInformation' element={<ShippingInformation />} />
+          <Route exact path='/shippingMethod' element={<ShippingMethod />} />
+          <Route exact path='/paymentInformation' element={<PaymentInformation />} />
+          <Route exact path='/placeOrder' element={<PlaceOrder />} />
+          <Route exact path='/orderSuccessfull' element={<OrderSuccessfull />} />
+          
+          <Route exact path='/product/:productId' element={<ProductDetails onAdd={onAdd} cartItems={cartItems}  />} />
           <Route exact path='/cart' element={<Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />
           <Route>404 Not Found!</Route>
         </Routes>

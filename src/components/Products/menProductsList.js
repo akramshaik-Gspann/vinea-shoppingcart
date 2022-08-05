@@ -40,22 +40,22 @@ const MenProductList = () => {
           </div>
         </div>
       </div>
-      <div className="container">
-        <div className="productCatalog-desktop">
-          <div class="aem-Grid aem-Grid--12">
-            <div class="aem-GridColumn aem-GridColumn--default--4">
-              <div className="productCatalog__title">
-                <h3>Men's</h3>
-              </div>
+
+      <div className="productCatalog-desktop">
+        <div class="aem-Grid aem-Grid--12">
+          <div class="aem-GridColumn aem-GridColumn--default--4">
+            <div className="productCatalog__title">
+              <h3>Men's</h3>
             </div>
-            <div class="aem-GridColumn aem-GridColumn--default--8">
-              <div className="productCatalog__image">
-                <img src={men} alt="men" />
-              </div>
+          </div>
+          <div class="aem-GridColumn aem-GridColumn--default--8">
+            <div className="productCatalog__image">
+              <img src={men} alt="men" />
             </div>
           </div>
         </div>
-
+      </div>
+      <div className="container">
         <div className="breadcrumbslist">
           <div class="aem-Grid aem-Grid--12">
             <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
@@ -81,37 +81,11 @@ const MenProductList = () => {
             <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
               <div className="productfilters">
                 <h4>Filters</h4>
-                <p>Attribute</p>
-                <label><input type="checkbox" />Option</label>
-                <label><input type="checkbox" />Option</label>
-                <label><input type="checkbox" />Option</label>
-                <label><input type="checkbox" />Option</label>
-                <a href="/">Show more</a>
-                <p>Attribute</p>
-                <label><input type="checkbox" />Option</label>
-                <label><input type="checkbox" />Option</label>
-                <label><input type="checkbox" />Option</label>
-                <label><input type="checkbox" />Option</label>
-                <p>Color</p>
-                <button className="btn-1"></button>
-                <button className="btn-2"></button>
-                <button className="btn-3"></button>
-                <button className="btn-4"></button>
-                <button className="btn-5"></button>
-                <button className="btn-6"></button>
-                <button className="btn-7"></button>
-                <button className="btn-8"></button>
-                <button className="btn-9"></button>
-                <button className="btn-10"></button>
-                <p>Attribute</p>
-                <label><input type="checkbox" />Option</label>
-                <label><input type="checkbox" />Option</label>
-                <label><input type="checkbox" />Option</label>
-                <label><input type="checkbox" />Option</label>
-                <label><input type="checkbox" />Option</label>
-                <label><input type="checkbox" />Option</label>
-                <label><input type="checkbox" />Option</label>
-                <label><input type="checkbox" />Option</label>
+                <p>Categories</p>
+                <label><input type="checkbox" />Jewellery</label>
+                <label><input type="checkbox" />Electronics</label>
+                <label><input type="checkbox" />Men's Clothing</label>
+                <label><input type="checkbox" />Women's Clothing</label>
                 <hr></hr>
               </div>
             </div>

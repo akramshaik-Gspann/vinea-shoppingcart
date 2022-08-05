@@ -14,9 +14,20 @@ body {
   margin: 0;
 }
 
+.cartCount1 {
+  background-color: #e26a2c;
+  color: white;
+  position: absolute;
+}
+
 .header {
-  border-bottom: 1px solid #dcdcdc;
   padding: 13px 0;
+  background-color: #E26A2C;
+  position: fixed;
+  height: 70px;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .header__content {
@@ -30,23 +41,14 @@ body {
 }
 
 .header__logo a span {
+  position: absolute;
+  left: 15%;
   text-decoration: none;
-  font-size: 30px;
-  color: #1B252C;
+  font-size: 25px;
+  color: #FFFFFF;
   font-family: "Righteous";
   letter-spacing: 5px;
-  font-weight: lighter;
   text-decoration: none;
-}
-
-.header__logo a span:nth-child(1) {
-  display: inline-block;
-  margin: 0;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #3D84FF), color-stop(50%, #172026));
-  background: linear-gradient(to right, #3D84FF 50%, #172026 50%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .header__logo a:hover {
@@ -83,9 +85,9 @@ body {
 
 .header__categories ul li a {
   text-decoration: none;
-  color: #1B252C;
-  font-size: 16px;
+  color: #FFFFFF;
   margin-left: 15px;
+  font-size: 16px;
 }
 
 .header__icons ul {
@@ -103,7 +105,7 @@ body {
 .header__icons ul li a {
   margin-left: 20px;
   text-decoration: none;
-  color: #1B252C;
+  color: #FFFFFF;
   font-size: 16px;
 }
 
@@ -113,6 +115,7 @@ body {
 
 .header__icons ul .cartCount {
   position: relative;
+  right: 100px;
 }
 
 .header__icons ul .cartCount a {

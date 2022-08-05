@@ -20,7 +20,8 @@ import { HiDocumentDuplicate } from "react-icons/hi";
 
 
 const ProductDetails = (props) => {
-  const { onAdd, onRemove } = props;
+
+  const { cartItems, onAdd, onRemove } = props;
   const { productId } = useParams();
   let product = useSelector((state) => state.product);
   const { image, title, price, description, rating } = product;
@@ -62,7 +63,15 @@ const ProductDetails = (props) => {
             </div>
 
             <div class="aem-Grid aem-Grid--12">
-              <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
+              <div className="aem-GridColumn aem-GridColumn--default--1 aem-GridColumn--phone--12">
+                <img src={product.image} alt={product.title} height="100px" width="80px" />
+                <img src={product.image} alt={product.title} height="100px" width="80px" />
+                <img src={product.image} alt={product.title} height="100px" width="80px" />
+                <img src={product.image} alt={product.title} height="100px" width="80px" />
+                <img src={product.image} alt={product.title} height="100px" width="80px" />
+              </div>
+
+              <div class="aem-GridColumn aem-GridColumn--default--5 aem-GridColumn--phone--12">
                 <div className="productdetails__left">
                   <img src={image} />
                 </div>
@@ -96,14 +105,51 @@ const ProductDetails = (props) => {
                     <button>L</button>
                     <button>XL</button>
                   </div>
-                  {/* <h5>Quantity</h5> */}
+                  <h5>Quantity</h5>
                   <div className="productdetails__right-quantity">
                     {/* <button className='btn-1' onClick={() => onRemove(product)}>-</button>
                     <input value={qty} onChange={(e) => onChange(e)} type="number" min="1" />
+                    <input type="text" value={product.qty} />
                     <button className='btn-1' onClick={() => onAdd(product)}>+</button> */}
+
+
+                    {cartItems.map((item) => (
+                      <div key={item.id} className="row">
+                        <div className="">
+                          <button onClick={() => onRemove(item)} className="">
+                            -
+                          </button>{' '}
+                          <input type="text" value={item.qty} />
+                          <button onClick={() => onAdd(item)} className="">
+                            +
+                          </button>
+                        </div>
+                     
+                      </div>
+                    ))}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                   </div>
                   <a >
-                    <button className="button-primary" onClick={() => onAdd(product)}>Add to Cart</button>
+                    <button className=" checkbtn1" onClick={() => onAdd(product)}>Add to Cart</button>
                   </a>
                   <div className="productdetails__right-share">
                     <ul>
@@ -116,26 +162,11 @@ const ProductDetails = (props) => {
             </div>
 
             <div className="aem-Grid aem-Grid--12">
-              <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
+              <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12">
                 <div className="productdetails__left-desc">
                   <h2>{title}</h2>
                   <h5>Description</h5>
                   <p>{description}</p>
-                </div>
-              </div>
-              <div className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
-                <div className="productdetails__right">
-                  <div className="productdetails__right-space">
-                  </div>
-                  <h5 className="pro-details">Details</h5>
-                  <div className="productdetails__right-icons">
-                    <p><GiTreeBranch /> Sweat-wicking</p>
-                    <p><WiHot /> Breathable</p>
-                  </div>
-                  <div className="productdetails__right-icons">
-                    <p><GiLindenLeaf /> Lightweight fabric</p>
-                    <p><HiDocumentDuplicate /> 69% nylon, 31% lycra</p>
-                  </div>
                 </div>
               </div>
             </div>

@@ -1,18 +1,18 @@
-$color_1: #FFFFFF;
+$color_1: #ffffff;
 $color_2: #172026;
-$color_3: #181C24;
-$background-color_1: #1F39FF;
-$background-color_2: #1B252C;
+$color_3: #181c24;
+$background-color_1: #1f39ff;
+$background-color_2: #1b252c;
 $background-color_3: #172026;
-$background-color_4: #FFFFFF;
-$background-color_5: #2D9D78;
-$background-color_6: #FDBA5E;
-$background-color_7: #87CEEB;
-$background-color_8: #E34850;
-$background-color_9: #6408D3;
-$background-color_10: #F9009A;
-$background-color_11: #EB7327;
-$background-color_12: #228B22;
+$background-color_4: #ffffff;
+$background-color_5: #2d9d78;
+$background-color_6: #fdba5e;
+$background-color_7: #87ceeb;
+$background-color_8: #e34850;
+$background-color_9: #6408d3;
+$background-color_10: #f9009a;
+$background-color_11: #eb7327;
+$background-color_12: #228b22;
 $border-color_1: transparent;
 
 .button-primary {
@@ -34,7 +34,7 @@ $border-color_1: transparent;
 	background-color: $background-color_2;
 	// height: 340px;
 	position: relative;
-	padding: 100px 0;
+	padding: 122px 0;
 	h3 {
 		color: $color_1;
 		text-align: center;
@@ -51,7 +51,9 @@ $border-color_1: transparent;
 		}
 	}
 }
+
 .productCatalog__image {
+	padding: 45px 0px 0px 0px;
 	img {
 		width: 100%;
 		height: 232px;
@@ -59,14 +61,14 @@ $border-color_1: transparent;
 	}
 }
 .breadcrumbslist {
-	margin-top: 25px;
+	margin-top: 35px;
 	select {
-		border: 1px solid #B5B7BC;
+		border: 1px solid #b5b7bc;
 		border-radius: 8px;
-		padding: 5px 20px;
+		padding: 0px 10px;
 		color: $color_2;
-		height: 44px;
-		font-size: 16px;
+		height: 30px;
+		font-size: 15px;
 		outline: none;
 		cursor: pointer;
 	}
@@ -87,13 +89,13 @@ $border-color_1: transparent;
 			border-top: 1px solid #dcdcdc;
 			padding-top: 10px;
 		}
-		input[type=checkbox] {
+		input[type="checkbox"] {
 			height: 24px;
 			width: 24px;
 			vertical-align: middle;
 			margin-right: 10px;
 			margin-top: 0;
-			border: 1px solid #91959C;
+			border: 1px solid #91959c;
 		}
 		label {
 			font-weight: normal;
@@ -110,7 +112,7 @@ $border-color_1: transparent;
 		button {
 			width: 50px;
 			height: 40px;
-			border: 2px solid #91959C;
+			border: 2px solid #91959c;
 			border-radius: 6px;
 			margin-right: 5px;
 			margin-bottom: 5px;
@@ -163,7 +165,7 @@ $border-color_1: transparent;
 	.productfilters {
 		display: none;
 	}
-	.sortByLatest{
+	.sortByLatest {
 		display: none;
 	}
 	.product__image {
@@ -181,6 +183,7 @@ $border-color_1: transparent;
 		margin-top: 0px !important;
 	}
 	.productCatalog__image {
+		padding: 0px;
 		img {
 			height: auto !important;
 		}
@@ -206,7 +209,7 @@ $border-color_1: transparent;
 		justify-content: space-around;
 		margin: 20px 0px;
 		button {
-			background: #FFFFFF;
+			background: #ffffff;
 			border: none;
 			outline: none;
 			color: $color_3;
@@ -249,6 +252,7 @@ $border-color_1: transparent;
 		margin-top: 0px !important;
 	}
 	.productCatalog__image {
+		padding: 0px;
 		img {
 			height: auto !important;
 		}
@@ -274,7 +278,7 @@ $border-color_1: transparent;
 		display: flex;
 		margin: 20px 0px;
 		button {
-			background: #FFFFFF;
+			background: #ffffff;
 			border: none;
 			outline: none;
 			color: $color_3;

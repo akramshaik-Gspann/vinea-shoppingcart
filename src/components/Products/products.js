@@ -71,7 +71,7 @@ const ProductList = () => {
                 <p>{products.length} Results</p>
                 <div className="sortByLatest">
                   <select>
-                    <option>Sort by Latest</option>
+                    <option>Sort by Price</option>
                   </select>
                 </div>
               </div>
@@ -83,37 +83,11 @@ const ProductList = () => {
               <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
                 <div className="productfilters">
                   <h4>Filters</h4>
-                  <p>Attribute</p>
-                  <label><input type="checkbox" />X-Small</label>
-                  <label><input type="checkbox" />Small</label>
-                  <label><input type="checkbox" />Medium</label>
-                  <label><input type="checkbox" />Large</label>
-                  <a href="/">Show more</a>
-                  <p>Attribute</p>
-                  <label><input type="checkbox" />Outdoor</label>
-                  <label><input type="checkbox" />Casual</label>
-                  <label><input type="checkbox" />Athlesisure</label>
-                  <label><input type="checkbox" />Running</label>
-                  <p>Color</p>
-                  <button className="btn-1"></button>
-                  <button className="btn-2"></button>
-                  <button className="btn-3"></button>
-                  <button className="btn-4"></button>
-                  <button className="btn-5"></button>
-                  <button className="btn-6"></button>
-                  <button className="btn-7"></button>
-                  <button className="btn-8"></button>
-                  <button className="btn-9"></button>
-                  <button className="btn-10"></button>
-                  <p>Attribute</p>
-                  <label><input type="checkbox" />Calvin Klien</label>
-                  <label><input type="checkbox" />Dolce & Gabbana</label>
-                  <label><input type="checkbox" />Miu Miu</label>
-                  <label><input type="checkbox" />Prada</label>
-                  <label><input type="checkbox" />Rag & Bone</label>
-                  <label><input type="checkbox" />Gucci</label>
-                  <label><input type="checkbox" />Chanel</label>
-                  <label><input type="checkbox" />Dior</label>
+                  <p>Categories</p>
+                  <label><input type="checkbox" />Jewellery</label>
+                  <label><input type="checkbox" />Electronics</label>
+                  <label><input type="checkbox" />Men's Clothing</label>
+                  <label><input type="checkbox" />Women's Clothing</label>
                   <hr></hr>
                 </div>
               </div>

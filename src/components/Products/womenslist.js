@@ -3,7 +3,7 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { setProducts } from "../../redux/actions/productsActions";
 import WomenProductPage from "../ProductInformation/womensPage";
-import women from "../../assets/images/women9.jpg";
+import women from "../../assets/images/girl.jpg";
 import BreadCrumb from '../BreadCrumb/breadCrumb';
 import '../../assets/scss/productList.css';
 import { BiSort } from "react-icons/bi";
@@ -40,22 +40,22 @@ const WomenProductList = () => {
           </div>
         </div>
       </div>
-      <div className="container">
-        <div className="productCatalog-desktop">
-          <div class="aem-Grid aem-Grid--12">
-            <div class="aem-GridColumn aem-GridColumn--default--4">
-              <div className="productCatalog__title">
-                <h3>Women's</h3>
-              </div>
+
+      <div className="productCatalog-desktop">
+        <div class="aem-Grid aem-Grid--12">
+          <div class="aem-GridColumn aem-GridColumn--default--4">
+            <div className="productCatalog__title">
+              <h3>Women's</h3>
             </div>
-            <div class="aem-GridColumn aem-GridColumn--default--8">
-              <div className="productCatalog__image">
-                <img src={women} alt="women" />
-              </div>
+          </div>
+          <div class="aem-GridColumn aem-GridColumn--default--8">
+            <div className="productCatalog__image">
+              <img src={women} alt="women" />
             </div>
           </div>
         </div>
-
+      </div>
+      <div className="container">
         <div className="breadcrumbslist">
           <div class="aem-Grid aem-Grid--12">
             <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
@@ -63,13 +63,13 @@ const WomenProductList = () => {
             </div>
             <div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12">
               <div className="product-filter">
-                <button><FaArrowsAlt /> Filter Results</button><button><BiSort /> Sort Ptoducts</button>
+                <button><FaArrowsAlt /> Filter Results</button><button><BiSort /> Sort Products</button>
               </div>
               <div className="breadcrumbslist__filter">
                 <p>{categoryList.length} Results</p>
                 <div className="sortByLatest">
                   <select>
-                    <option>Sort by Latest</option>
+                    <option>Sort by Price</option>
                   </select>
                 </div>
               </div>
@@ -81,37 +81,11 @@ const WomenProductList = () => {
             <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
               <div className="productfilters">
                 <h4>Filters</h4>
-                <p>Attribute</p>
-                <label><input type="checkbox" />X-Small</label>
-                <label><input type="checkbox" />Small</label>
-                <label><input type="checkbox" />Medium</label>
-                <label><input type="checkbox" />Large</label>
-                <a href="/">Show more</a>
-                <p>Attribute</p>
-                <label><input type="checkbox" />Outdoor</label>
-                <label><input type="checkbox" />Casual</label>
-                <label><input type="checkbox" />Athlesisure</label>
-                <label><input type="checkbox" />Running</label>
-                <p>Color</p>
-                <button className="btn-1"></button>
-                <button className="btn-2"></button>
-                <button className="btn-3"></button>
-                <button className="btn-4"></button>
-                <button className="btn-5"></button>
-                <button className="btn-6"></button>
-                <button className="btn-7"></button>
-                <button className="btn-8"></button>
-                <button className="btn-9"></button>
-                <button className="btn-10"></button>
-                <p>Attribute</p>
-                <label><input type="checkbox" />Calvin Klien</label>
-                <label><input type="checkbox" />Dolce & Gabbana</label>
-                <label><input type="checkbox" />Miu Miu</label>
-                <label><input type="checkbox" />Prada</label>
-                <label><input type="checkbox" />Rag & Bone</label>
-                <label><input type="checkbox" />Gucci</label>
-                <label><input type="checkbox" />Chanel</label>
-                <label><input type="checkbox" />Dior</label>
+                <p>Categories</p>
+                <label><input type="checkbox" />Jewellery</label>
+                <label><input type="checkbox" />Electronics</label>
+                <label><input type="checkbox" />Men's Clothing</label>
+                <label><input type="checkbox" />Women's Clothing</label>
                 <hr></hr>
               </div>
             </div>

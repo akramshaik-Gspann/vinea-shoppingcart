@@ -1,7 +1,7 @@
 .button-primary {
-  background-color: #1F39FF;
+  background-color: #1f39ff;
   font-size: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 25px;
   text-transform: uppercase;
   border-color: transparent;
@@ -17,13 +17,13 @@
 }
 
 .productCatalog__title {
-  background-color: #1B252C;
+  background-color: #1b252c;
   position: relative;
-  padding: 100px 0;
+  padding: 122px 0;
 }
 
 .productCatalog__title h3 {
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   margin: 0;
   font-size: 48px;
@@ -31,12 +31,16 @@
 
 .productCatalog__title h3::before {
   content: "";
-  background-color: #1F39FF;
+  background-color: #1f39ff;
   width: 30%;
   position: absolute;
   height: 5px;
   top: 70%;
   left: 35%;
+}
+
+.productCatalog__image {
+  padding: 45px 0px 0px 0px;
 }
 
 .productCatalog__image img {
@@ -46,16 +50,16 @@
 }
 
 .breadcrumbslist {
-  margin-top: 25px;
+  margin-top: 35px;
 }
 
 .breadcrumbslist select {
-  border: 1px solid #B5B7BC;
+  border: 1px solid #b5b7bc;
   border-radius: 8px;
-  padding: 5px 20px;
+  padding: 0px 10px;
   color: #172026;
-  height: 44px;
-  font-size: 16px;
+  height: 30px;
+  font-size: 15px;
   outline: none;
   cursor: pointer;
 }
@@ -82,13 +86,13 @@
   padding-top: 10px;
 }
 
-.productfilter .productfilters input[type=checkbox] {
+.productfilter .productfilters input[type="checkbox"] {
   height: 24px;
   width: 24px;
   vertical-align: middle;
   margin-right: 10px;
   margin-top: 0;
-  border: 1px solid #91959C;
+  border: 1px solid #91959c;
 }
 
 .productfilter .productfilters label {
@@ -98,7 +102,7 @@
 }
 
 .productfilter .productfilters a {
-  color: #181C24;
+  color: #181c24;
   text-decoration: underline;
   font-size: 14px;
   margin-bottom: 20px;
@@ -108,7 +112,7 @@
 .productfilter .productfilters button {
   width: 50px;
   height: 40px;
-  border: 2px solid #91959C;
+  border: 2px solid #91959c;
   border-radius: 6px;
   margin-right: 5px;
   margin-bottom: 5px;
@@ -119,39 +123,39 @@
 }
 
 .productfilter .productfilters .btn-2 {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .productfilter .productfilters .btn-3 {
-  background-color: #2D9D78;
+  background-color: #2d9d78;
 }
 
 .productfilter .productfilters .btn-4 {
-  background-color: #FDBA5E;
+  background-color: #fdba5e;
 }
 
 .productfilter .productfilters .btn-5 {
-  background-color: #87CEEB;
+  background-color: #87ceeb;
 }
 
 .productfilter .productfilters .btn-6 {
-  background-color: #E34850;
+  background-color: #e34850;
 }
 
 .productfilter .productfilters .btn-7 {
-  background-color: #6408D3;
+  background-color: #6408d3;
 }
 
 .productfilter .productfilters .btn-8 {
-  background-color: #F9009A;
+  background-color: #f9009a;
 }
 
 .productfilter .productfilters .btn-9 {
-  background-color: #EB7327;
+  background-color: #eb7327;
 }
 
 .productfilter .productfilters .btn-10 {
-  background-color: #228B22;
+  background-color: #228b22;
   margin-bottom: 15px;
 }
 
@@ -185,6 +189,9 @@
   .productCatalog {
     margin-top: 0px !important;
   }
+  .productCatalog__image {
+    padding: 0px;
+  }
   .productCatalog__image img {
     height: auto !important;
   }
@@ -213,10 +220,10 @@
     margin: 20px 0px;
   }
   .product-filter button {
-    background: #FFFFFF;
+    background: #ffffff;
     border: none;
     outline: none;
-    color: #181C24;
+    color: #181c24;
     text-decoration: underline;
     font-size: 16px;
     font-weight: 600;
@@ -253,6 +260,9 @@
   .productCatalog {
     margin-top: 0px !important;
   }
+  .productCatalog__image {
+    padding: 0px;
+  }
   .productCatalog__image img {
     height: auto !important;
   }
@@ -282,10 +292,10 @@
     margin: 20px 0px;
   }
   .product-filter button {
-    background: #FFFFFF;
+    background: #ffffff;
     border: none;
     outline: none;
-    color: #181C24;
+    color: #181c24;
     text-decoration: underline;
     font-size: 16px;
     font-weight: 600;

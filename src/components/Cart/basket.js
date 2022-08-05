@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import '../../assets/scss/cart.scss';
 import paypal from '../../assets/images/PP_BTN.png';
 import trash from '../../assets/images/trash.png';
@@ -52,11 +52,28 @@ export default function Basket(props) {
                     </div>
                     <div class="aem-GridColumn aem-GridColumn--default--3">
                       <div className='cart__desktop'>
-                        <div className='cart__btn'>
+                        {/* <div className='cart__btn'>
                           <button className='btn-1' onClick={() => onRemove(item)}>-</button>
                           <input value={qty} onChange={(e) => onChange(e)} type="number" min="1" />
                           <button className='btn-1' onClick={() => onAdd(item)}>+</button>
-                        </div>
+                        </div> */}
+
+
+                        {cartItems.map((item) => (
+                          <div key={item.id} className='cart__btn'>
+                            <div className="">
+                              <button onClick={() => onRemove(item)} className="btn btn-outline-danger">
+                                -
+                              </button>{' '}
+                              <input type="text" value={item.qty} />
+                              <button onClick={() => onAdd(item)} className="btn btn-outline-info">
+                                +
+                              </button>
+                            </div>
+
+                          </div>
+                        ))}
+
                       </div>
                     </div>
                     <div class="aem-GridColumn aem-GridColumn--default--3">
@@ -100,20 +117,6 @@ export default function Basket(props) {
               <Accordions />
             </div>
 
-            {/* <div className="col-2">
-                        <button onClick={() => onRemove(item)} className="btn btn-outline-danger">
-                          -
-                        </button>{' '}
-                        <button onClick={() => onAdd(item)} className="btn btn-outline-info">
-                          +
-                        </button>
-                      </div>
-
-                      <div className="col-2 text-right">
-                        {item.qty} x ${item.price.toFixed(2)}
-                      </div>
-                    </div> */}
-
             < div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12" >
               <div className='cart__right'>
                 <h4>Pricing Summary</h4>
@@ -144,7 +147,13 @@ export default function Basket(props) {
                       <p><b>Estimated Total</b></p>
                       <p><b>${totalPrice.toFixed(2)}</b></p>
                     </div>
-                    <button onClick={() => alert('Under maintanance')} className="button-primary checkbtn"><i className="fa fa-lock"></i>Checkout</button>
+
+                    <NavLink to="/checkOutForm">
+                      <button className=" checkbtn">
+                        <i className="fa fa-lock"></i>
+                        Checkout
+                      </button>
+                    </NavLink>
                     <Link to='#'><img src={paypal} alt="paypal" /></Link>
                   </>
                 )}
