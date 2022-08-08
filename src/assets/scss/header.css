@@ -16,8 +16,14 @@ body {
 
 .cartCount1 {
   background-color: #e26a2c;
+  border: none;
   color: white;
-  position: absolute;
+  border-radius: 6px;
+  padding: 0px 4px;
+  font-size: 11px;
+  position: relative;
+  top: -6px;
+  right: 10px;
 }
 
 .header {

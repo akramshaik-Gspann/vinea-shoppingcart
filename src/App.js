@@ -65,9 +65,9 @@ function App() {
           <Route exact path='/electronics' element={<AccessoriesProductList />} />
           <Route exact path='/products' element={<ProductPage />} />
 
-          <Route exact path='/checkoutForm' element={<CheckOutForm />} />
-          <Route exact path='/shippingInformation' element={<ShippingInformation cartItems={cartItems} />} />
-          <Route exact path='/shippingMethod' element={<ShippingMethod />} />
+          <Route exact path='/checkoutForm' element={<CheckOutForm cartItems={cartItems} />} />
+          <Route exact path='/shippingInformation' element={<ShippingInformation  cartItems={cartItems} />} />
+          <Route exact path='/shippingMethod' element={<ShippingMethod  />} />
           <Route exact path='/paymentInformation' element={<PaymentInformation />} />
           <Route exact path='/placeOrder' element={<PlaceOrder />} />
           <Route exact path='/orderSuccessfull' element={<OrderSuccessfull />} />

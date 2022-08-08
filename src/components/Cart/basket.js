@@ -35,12 +35,12 @@ export default function Basket(props) {
 
                 <div className='cart__productlayout'>
                   <div class="aem-Grid aem-Grid--12" key={item.id}>
-                    <div class="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--2">
+                    <div class="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--12">
                       <div className="cart__image">
                         <img src={item.image} />
                       </div>
                     </div>
-                    <div class="aem-GridColumn aem-GridColumn--default--4">
+                    <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
                       <div className='cart__desktop'>
                         <span className='cart__details'>
                           <h5>{item.title}</h5>
@@ -50,26 +50,31 @@ export default function Basket(props) {
                         </span>
                       </div>
                     </div>
-                    <div class="aem-GridColumn aem-GridColumn--default--3">
+                    <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
                       <div className='cart__desktop'>
-                        {cartItems.map((item) => (
-                          <div key={item.id} className='cart__btn'>
-                            <div className="">
-                              <button onClick={() => onRemove(item)} className="decrement">
-                                -
-                              </button>{' '}
-                              <input type="text" value={item.qty} />
-                              <button onClick={() => onAdd(item)} className="increment">
-                                +
-                              </button>
-                            </div>
+                        <div key={item.id} className='cart__btn'>
+                          <div className="input-group w-auto align-items-center">
+                            <input
+                              type="button"
+                              value="-"
+                              className="button-minus border rounded-circle"
+                              data-field="quantity"
+                              onClick={() => onRemove(item)}
+                            />&nbsp;&nbsp;
+                            <h6 className="quant">{item.qty}</h6>&nbsp;&nbsp;
 
+                            <input
+                              type="button"
+                              value="+"
+                              className="button-plus border rounded-circle"
+                              data-field="quantity"
+                              onClick={() => onAdd(item)}
+                            />
                           </div>
-                        ))}
-
+                        </div>
                       </div>
                     </div>
-                    <div class="aem-GridColumn aem-GridColumn--default--3">
+                    <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
                       <div className='cart__desktop'>
                         <ul>
                           <li><Link to='#'><img src={edit} /> Edit</Link></li>
@@ -78,7 +83,7 @@ export default function Basket(props) {
                         </ul>
                       </div>
                     </div>
-                    <div class="aem-GridColumn aem-GridColumn--phone--9">
+                    <div class="aem-GridColumn aem-GridColumn--phone--9 aem-GridColumn--phone--12">
                       <div className='cart__mobile'>
                         <h5>{item.title}</h5>
                         <p>Size: Medium</p>
@@ -92,7 +97,7 @@ export default function Basket(props) {
                         </div>
                       </div>
                     </div>
-                    <div class="aem-GridColumn aem-GridColumn--phone--1">
+                    <div class="aem-GridColumn aem-GridColumn--phone--1 aem-GridColumn--phone--12">
                       <div className='cart__mobile'>
                         <div className="dropdown">
                           <button className="dropbtn"></button>

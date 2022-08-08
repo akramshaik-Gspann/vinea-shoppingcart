@@ -20,9 +20,20 @@ body {
 	margin: 0;
 }
 .cartCount1{
-	background-color: #e26a2c;
-	color: white;
-	position: absolute;
+	// background-color: #e26a2c;
+	// color: white;
+	// position: absolute;
+
+  background-color: #e26a2c;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  padding: 0px 4px;
+  font-size: 11px;
+  position: relative;
+  top: -6px;
+  right: 10px;
+
 }
 .header {
 	padding: 13px 0;

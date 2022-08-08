@@ -16,6 +16,30 @@ h2 {
 h3 {
 	font-family: $font-family_1;
 }
+.input-group {
+	padding-top: 3.3rem;
+
+	.border {
+
+		background-color: transparent;
+		border: 2px #b5b7bc solid !important;
+		color: #b5b7bc;
+	}
+
+	.quant {
+		border: 2px #b5b7bc solid;
+		width: 4rem;
+		height: 2.5rem;
+		text-align: center;
+		border-radius: 6px !important;
+		padding-top: 5px;
+		margin-top: 0.4rem;
+	}
+
+	p:last-child {
+		font-size: 0.9rem;
+	}
+}
 .button-primary {
 	background-color: $background-color_1;
 	font-size: 14px;

@@ -105,9 +105,8 @@ const ProductDetails = (props) => {
                     <button>L</button>
                     <button>XL</button>
                   </div>
-
                   <h3>Quantity</h3>
-                  {/* <div className="input-group w-auto align-items-center">
+                  <div className="input-group w-auto align-items-center">
                     <input
                       type="button"
                       value="-"
@@ -123,18 +122,10 @@ const ProductDetails = (props) => {
                       data-field="quantity"
                       onClick={() => onAdd(product)}
                     />
-                  </div> */}
-
+                  </div>
                   <button className="addtocart"
                     onClick={() => onAdd(product)}
                   >Add to Cart</button>
-
-
-
-
-
-
-
                   <div className="productdetails__right-share">
                     <ul>
                       <li><a href="#"><img src={heart} /> Save</a></li>
@@ -144,7 +135,6 @@ const ProductDetails = (props) => {
                 </div>
               </div>
             </div>
-
             <div className="aem-Grid aem-Grid--12">
               <div className="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12">
                 <div className="productdetails__left-desc">

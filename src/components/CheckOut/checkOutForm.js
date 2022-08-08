@@ -1,8 +1,7 @@
 import React from 'react'
 import '../../assets/scss/checkoutForm.scss';
-import PaymentInformation from './paymentInformation';
 import ShippingInformation from './shippingInformation';
-import ShippingMethod from './shippingMethod';
+
 
 function CheckOutForm() {
     return (

@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../assets/scss/shippingInformation.css';
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import ShippingMethod from './shippingMethod';
 
 function ShippingInformation() {
+
+  const [ isShipping, setIsShipping ] = useState(false);
 
   const {
     register,
@@ -16,6 +19,7 @@ function ShippingInformation() {
   const onSubmit = (data) => {
     console.log(data);
     reset();
+    setIsShipping(data);
   };
 
   return (
@@ -235,28 +239,43 @@ function ShippingInformation() {
             <br />
             <div class="aem-Grid aem-Grid--12">
               <div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12 ">
-                {/* <div>
-                    <button type="submit" class="btn-shipping">
-                      CONTINUE TO SHIPPING METHOD
-                    </button>
-                  </div> */}
-
                 <div className='continue_shipping'>
+                  <button type="submit" class="btn-shipping">
+                    CONTINUE TO SHIPPING METHOD
+                  </button>
+                </div>
+
+                {/* <div className='continue_shipping'>
                   <Link to="/shippingMethod" >
                     <button type="submit" class="btn-shipping">
                       CONTINUE TO SHIPPING METHOD
                     </button>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
-            <hr />
-            <p> 2. Shipping Method</p>
-            <hr />
-            <p> 3. Payment Information</p>
-            <hr />
           </form>
+
+
+          <div className='checkout_Steps'>
+          <hr />
+            {
+              !isShipping ? <h4> 2. Shipping Method </h4> :  <ShippingMethod isShippingDetails= {isShipping}/>
+            }
+            <hr />  
+            <h4>3. Payment Information</h4>
+            <hr />
+          </div>
         </div>
+
+
+
+
+
+
+
+
+
         <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
           <div class="aem-Grid aem-Grid--12 button-btn">
             <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 text-left">

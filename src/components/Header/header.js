@@ -34,7 +34,7 @@ const Header = (props) => {
                 </div>
                 <div className="header__categories">
                   <ul>
-                    <li><NavLink to="/" activeClassName="active" >Home</NavLink></li>
+                    <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="/women">Women</NavLink></li>
                     <li><NavLink to="/men" >Men</NavLink></li>
                     <li><NavLink to="/electronics">Electronics</NavLink></li>
