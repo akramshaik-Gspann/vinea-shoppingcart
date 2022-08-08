@@ -1,9 +1,12 @@
 import React, { useState } from "react";
-import '../../assets/scss/header.css';
-import '../../assets/css/aem-grid.css';
 import { NavLink } from "react-router-dom";
 import Skeleton from 'react-loading-skeleton';
 import { FiShoppingBag } from 'react-icons/fi';
+import { FiSearch } from 'react-icons/fi';
+import { FiUser } from 'react-icons/fi';
+import LoginApp from "../SignIn/LoginApp";
+import '../../assets/scss/header.css';
+import '../../assets/css/aem-grid.css';
 import venia from '../../assets/images/venia.png';
 
 const Header = (props) => {
@@ -27,7 +30,7 @@ const Header = (props) => {
             <div className="container">
               <div className="header__content">
                 <div className="header__logo" >
-                  <NavLink className="" to="/"><img src={venia} width="80"/></NavLink>
+                  <NavLink className="" to="/"><img src={venia} width="80" /></NavLink>
                 </div>
                 <div className="header__categories">
                   <ul>
@@ -40,9 +43,17 @@ const Header = (props) => {
                 </div>
                 <div className="header__icons">
                   <ul>
+                    <li><NavLink to='#'><FiSearch /> Search</NavLink></li>
+                    <li className="dropdown sign"><NavLink to='#' className='dropbtn'><FiUser /> Sign in</NavLink>
+                      <div class="dropdown-content">
+                        <div className="login">
+                          <LoginApp />
+                        </div>
+                      </div>
+                    </li>
                     <li className="cartCount">
                       <NavLink to="/cart" className="">
-                      <FiShoppingBag />{' '}
+                        <FiShoppingBag />{' '}
                         {props.countCartItems ? (
                           <button className="cartCount1">{props.countCartItems}</button>
                         ) : (

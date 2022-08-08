@@ -3,11 +3,12 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { setProducts } from "../../redux/actions/productsActions";
 import WomenProductPage from "../ProductInformation/womensPage";
-import women from "../../assets/images/girl.jpg";
+import women from "../../assets/images/g1.png";
 import BreadCrumb from '../BreadCrumb/breadCrumb';
 import '../../assets/scss/productList.css';
 import { BiSort } from "react-icons/bi";
 import { FaArrowsAlt } from 'react-icons/fa';
+import Filter from '../Filter/Filter';
 
 const WomenProductList = () => {
   const products = useSelector((state) => state.allProducts.products);
@@ -78,7 +79,7 @@ const WomenProductList = () => {
         </div>
         <section className="productfilter">
           <div class="aem-Grid aem-Grid--12">
-            <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
+            {/* <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
               <div className="productfilters">
                 <h4>Filters</h4>
                 <p>Categories</p>
@@ -88,6 +89,9 @@ const WomenProductList = () => {
                 <label><input type="checkbox" />Women's Clothing</label>
                 <hr></hr>
               </div>
+            </div> */}
+            <div className="aem-GridColumn aem-GridColumn--default--3">
+              <Filter />
             </div>
             <div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12">
               <WomenProductPage />

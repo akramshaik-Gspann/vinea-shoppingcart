@@ -91,6 +91,9 @@ body {
 }
 
 .header__icons ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,7 +118,6 @@ body {
 
 .header__icons ul .cartCount {
   position: relative;
-  right: 100px;
 }
 
 .header__icons ul .cartCount a {
@@ -137,10 +139,6 @@ body {
 }
 
 .search {
-  margin-top: 6px;
-}
-
-.dropdown {
   margin-top: 6px;
 }
 

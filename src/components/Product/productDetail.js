@@ -62,7 +62,7 @@ const ProductDetails = (props) => {
               <BreadCrumb />
             </div>
 
-            <div class="aem-Grid aem-Grid--12">
+            <div class="aem-Grid aem-Grid--12 details ">
               <div className="aem-GridColumn aem-GridColumn--default--1 aem-GridColumn--phone--12">
                 <img src={product.image} alt={product.title} height="100px" width="80px" />
                 <img src={product.image} alt={product.title} height="100px" width="80px" />
@@ -105,32 +105,29 @@ const ProductDetails = (props) => {
                     <button>L</button>
                     <button>XL</button>
                   </div>
-                  <h5>Quantity</h5>
-                  <div className="productdetails__right-quantity">
-                    {/* <button className='btn-1' onClick={() => onRemove(product)}>-</button>
-                    <input value={qty} onChange={(e) => onChange(e)} type="number" min="1" />
-                    <input type="text" value={product.qty} />
-                    <button className='btn-1' onClick={() => onAdd(product)}>+</button> */}
 
+                  <h3>Quantity</h3>
+                  {/* <div className="input-group w-auto align-items-center">
+                    <input
+                      type="button"
+                      value="-"
+                      className="button-minus border rounded-circle"
+                      data-field="quantity"
+                      onClick={() => onRemove(product)}
+                    />&nbsp;&nbsp;
+                    <h6 className="quant">{cartItems?.find((x) => x.id === product.id)?.qty || 1}</h6>&nbsp;&nbsp;
+                    <input
+                      type="button"
+                      value="+"
+                      className="button-plus border rounded-circle"
+                      data-field="quantity"
+                      onClick={() => onAdd(product)}
+                    />
+                  </div> */}
 
-                    {cartItems.map((item) => (
-                      <div key={item.id} className="row">
-                        <div className="">
-                          <button onClick={() => onRemove(item)} className="">
-                            -
-                          </button>{' '}
-                          <input type="text" value={item.qty} />
-                          <button onClick={() => onAdd(item)} className="">
-                            +
-                          </button>
-                        </div>
-                     
-                      </div>
-                    ))}
-
-
-
-
+                  <button className="addtocart"
+                    onClick={() => onAdd(product)}
+                  >Add to Cart</button>
 
 
 
@@ -138,19 +135,6 @@ const ProductDetails = (props) => {
 
 
 
-
-
-
-
-
-
-
-
-
-                  </div>
-                  <a >
-                    <button className=" checkbtn1" onClick={() => onAdd(product)}>Add to Cart</button>
-                  </a>
                   <div className="productdetails__right-share">
                     <ul>
                       <li><a href="#"><img src={heart} /> Save</a></li>

@@ -13,11 +13,6 @@ function CheckOutForm() {
                         <div class="aem-Grid aem-Grid--12">
                             < div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12" >
                                 <ShippingInformation />
-                                {/* <hr />
-                            <ShippingMethod />
-                            <hr />
-                            <PaymentInformation />
-                            <hr /> */}
                             </div>
                         </div>
                     </div>

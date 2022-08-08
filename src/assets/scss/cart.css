@@ -13,7 +13,7 @@ h3 {
 .button-primary {
   background-color: #e26a2c;
   font-size: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 25px;
   text-transform: uppercase;
   border-color: transparent;
@@ -69,15 +69,15 @@ h3 {
 }
 
 .cart__btn .btn-1 {
-  background: #FFFFFF;
-  border: 2px solid #B5B8BA;
+  background: #ffffff;
+  border: 2px solid #b5b8ba;
   border-radius: 50%;
   height: 32px;
   width: 32px;
 }
 
 .cart__btn input {
-  border: 2px solid #B5B7BC;
+  border: 2px solid #b5b7bc;
   border-radius: 8px;
   width: 80px;
   height: 40px;
@@ -110,7 +110,7 @@ h3 {
 }
 
 .cart__right {
-  border: 1px solid #D1D3D6;
+  border: 1px solid #d1d3d6;
   padding: 15px 15px 25px 15px;
 }
 
@@ -224,7 +224,6 @@ h3 {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   left: -100px;
-  padding: 10px 10px 5px 10px;
 }
 
 .dropdown-content a {
@@ -232,6 +231,20 @@ h3 {
   margin-bottom: 5px;
   font-size: 13px;
   color: #172026;
+}
+
+.increment {
+  border-radius: 50%;
+  background: lightgrey;
+  height: 30px;
+  width: 30px;
+}
+
+.decrement {
+  border-radius: 50%;
+  background: lightgrey;
+  height: 30px;
+  width: 30px;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {

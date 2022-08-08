@@ -27,7 +27,8 @@ function LoginApp() {
   }
 
   return (
-    <div className="App">
+ <div class="container">
+     <div className="app1">
       {(user.email !== "") ? (
         
         <div className="signedin__welcome">
@@ -45,6 +46,7 @@ function LoginApp() {
         <LoginForm Login={Login} error={error} />
       )}
     </div>
+ </div>
   );
 }
 

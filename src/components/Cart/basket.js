@@ -52,21 +52,14 @@ export default function Basket(props) {
                     </div>
                     <div class="aem-GridColumn aem-GridColumn--default--3">
                       <div className='cart__desktop'>
-                        {/* <div className='cart__btn'>
-                          <button className='btn-1' onClick={() => onRemove(item)}>-</button>
-                          <input value={qty} onChange={(e) => onChange(e)} type="number" min="1" />
-                          <button className='btn-1' onClick={() => onAdd(item)}>+</button>
-                        </div> */}
-
-
                         {cartItems.map((item) => (
                           <div key={item.id} className='cart__btn'>
                             <div className="">
-                              <button onClick={() => onRemove(item)} className="btn btn-outline-danger">
+                              <button onClick={() => onRemove(item)} className="decrement">
                                 -
                               </button>{' '}
                               <input type="text" value={item.qty} />
-                              <button onClick={() => onAdd(item)} className="btn btn-outline-info">
+                              <button onClick={() => onAdd(item)} className="increment">
                                 +
                               </button>
                             </div>

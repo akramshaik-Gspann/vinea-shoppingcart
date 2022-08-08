@@ -264,8 +264,9 @@ function ShippingInformation() {
             </div>
 
             <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 text__right">
-              <Link to="/signin"> <button type="button" className='btn-signin'>
+              <Link to="/login"> <button type="button" className='btn-signin'>
                 SIGN IN</button></Link>
+
             </div>
           </div>
           <br />

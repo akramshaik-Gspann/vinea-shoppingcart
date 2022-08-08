@@ -96,6 +96,7 @@ body {
 }
 .header__icons {
 	ul {
+		align-items: center;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -118,7 +119,7 @@ body {
 		}
 		.cartCount {
 			position: relative;
-			right: 100px;
+			// right: 100px;
 			a {
 				font-size: 20px;
 			}
@@ -141,9 +142,7 @@ body {
 .search {
 	margin-top: 6px;
 }
-.dropdown {
-	margin-top: 6px;
-}
+
 @media only screen and (min-width: 1024px) and (max-width: 1800px) {
 	.hamburgerPhone {
 		display: none;

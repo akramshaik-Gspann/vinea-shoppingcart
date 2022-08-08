@@ -20,6 +20,7 @@ import ShippingMethod from "./components/CheckOut/shippingMethod";
 import PaymentInformation from "./components/CheckOut/paymentInformation";
 import PlaceOrder from "./components/CheckOut/placeOrder";
 import OrderSuccessfull from "./components/CheckOut/orderSuccessfull";
+import Filter from "./components/Filter/Filter";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -57,6 +58,7 @@ function App() {
           <Route exact path='/' element={<Home />}/>
           <Route exact path='/login' element={<LoginApp />} />
           <Route exact path="/registerForm" element={<RegisterForm />} />
+          <Route exact path='/filter'element={<Filter />} />
           <Route exact path='/women' element={<WomenProductList />} />
           <Route exact path='/men' element={<MenProductList />} />
           <Route exact path='/jewellery' element={<SmartGearProductList />} />
@@ -64,7 +66,7 @@ function App() {
           <Route exact path='/products' element={<ProductPage />} />
 
           <Route exact path='/checkoutForm' element={<CheckOutForm />} />
-          <Route exact path='/shippingInformation' element={<ShippingInformation />} />
+          <Route exact path='/shippingInformation' element={<ShippingInformation cartItems={cartItems} />} />
           <Route exact path='/shippingMethod' element={<ShippingMethod />} />
           <Route exact path='/paymentInformation' element={<PaymentInformation />} />
           <Route exact path='/placeOrder' element={<PlaceOrder />} />

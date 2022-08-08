@@ -1,18 +1,18 @@
 $color_1: #888;
-$color_2: #FFF;
+$color_2: #fff;
 $color_3: #666;
-$color_4: #FE4880;
+$color_4: #fe4880;
 $font-family_1: montserrat, sans-serif;
 $background-color_1: gainsboro;
-$background-color_2: #FFF;
-$background-color_3: #F8F8F8;
-$background-color_4: blue;
+$background-color_2: #fff;
+$background-color_3: #f8f8f8;
+$background-color_4: #e26a2c;
 $background-color_5: #fff;
 
 input {
-	-webkit-appearance: none;
+	// -webkit-appearance: none;
 	-moz-appearance: none;
-	appearance: none;
+	// appearance: none;
 	background: none;
 	border: none;
 	outline: none;
@@ -33,10 +33,11 @@ form {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	
+
 	.form-inner {
 		position: relative;
 		display: block;
+		// margin-top: 50px;
 		background-color: $background-color_2;
 		padding: 30px;
 		z-index: 2;
@@ -136,3 +137,11 @@ form {
 	border-radius: 20%;
 	width: 80%;
 }
+.signedout {
+	background-color: #fe4880;
+	color: #f8f8f8;
+	height: 40px;
+	width: 90px;
+	border: 2px solid #888;
+}
+

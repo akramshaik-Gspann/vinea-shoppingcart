@@ -1,5 +1,4 @@
 import React from 'react'
-// import "../Style/Checkouttwo.css"
 import '../../assets/scss/shippingMethod.css';
 import { Link } from "react-router-dom";
 import Edit from '../../assets/images/Edit.svg';
